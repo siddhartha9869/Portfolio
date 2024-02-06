@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d8e6f9a41.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Portfolio | Contact</title>
+</head>
+<body>
+    <header class="bisect"></header>
+<!-- =========================================================================== -->
+    <div class="contact">
+        <div class="contact_text">
+            <span>Contact Us</span>
+            <hr>
+            <p>Here I'm There for You. Reach me Out At</p>
+        </div>
+        <div class="contact_time">
+            <div class="contact_time_card">
+                <span>ADDRESS</span>
+                <hr>
+                <p>B/401 SRA CHS Ltd, 90 feet road <br> Mulund (East), Mumbai - 400081, Maharashtra</p>
+            </div>
+        
+            <div class="contact_time_card">
+                <span>CONTACT INFO</span>
+                <hr>
+                <p>Phone: +91 88504 88304 <br>Email: siddhartha9869@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact_message">
+            <span>LEAVE US A MESSAGE</span>
+
+            <span id="error"></span>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="message" id="" placeholder="Message" cols="30" rows="5"></textarea>
+                <button class="button" onclick="validateForm()">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+<!-- =========================================================================== -->
+    <footer></footer>
+<!-- =========================================================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        function validateForm() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var error = document.getElementById('error');
+    
+    var valid = true;
+
+    // Reset error messages
+    error.innerHTML = '';
+    error.innerHTML = '';
+    error.innerHTML = '';
+
+    // Name validation
+    if (name === '') {
+        error.innerHTML = 'Please enter your name';
+        valid = false;
+    }
+
+    // Email validation
+    if (email === '') {
+        error.innerHTML = 'Please enter your email';
+        valid = false;
+    } else if (!isValidEmail(email)) {
+        error.innerHTML = 'Please enter a valid email address';
+        valid = false;
+    }
+
+    // Message validation
+    if (message === '') {
+        error.innerHTML = 'Please enter your message';
+        valid = false;
+    }
+
+    // Submit form if valid
+    if (valid) {
+        // Here you can submit the form or perform any other action
+        alert('Form submitted successfully!');
+        // Reset form fields
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    }
+}
+
+function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <style>
+        h2,
+        p {
+            margin: 0.25rem;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Preview not available</h2>
+        <p>The following project requires an IDE or a platform to open. You can still download source code or APK file
+            by </p>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+                url = window.location.href;
+                data = url.split('data=').pop();
+                console.log(data);
+                
+            if (data==='OCR%20Scanner%20Application') {
+                $('p').append('<a href="https://mccmulund-my.sharepoint.com/:f:/g/personal/siddhartha202005_mccmulund_ac_in/EpBatIXajPFPkrFGb1h7cSABaV3dSzx68IFf8MAdiekkAg?e=Z9JRTy"download="OCR.zip">Clicking here</a>');
+            } else if(data==='NetClan%20Explorer%20Clone'){
+                $('p').append('<a href="https://mccmulund-my.sharepoint.com/:f:/g/personal/siddhartha202005_mccmulund_ac_in/En_G3xYG4nhKqwrl_wz6C_YBOesbYBZslqY33kpgdZMBug?e=YmiEV4"download="NetClan.zip">Clicking here</a>');
+            } else if (data==='Agricultiral%20Tools%20and%20Machinaries%20Shop') {
+                $('p').append('<a href="https://mccmulund-my.sharepoint.com/:f:/g/personal/siddhartha202005_mccmulund_ac_in/EsxhnW31YlhIm8Pm4SgdHTIBS3KGuDbAoQmqHNdHlS9Gow?e=5lz207"download="Agricultural Tools.zip">Clicking here</a>')
+            }
+            // console.log(a);
+        });
+    </script>
+</body>
+
+</html>

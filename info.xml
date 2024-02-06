@@ -1,0 +1,227 @@
+<data>
+    <FullName>Siddhartha Maurya</FullName>
+    <FirstName>Siddhartha</FirstName>
+    <LastName>Maurya</LastName>
+
+    <Objectives>To experience and explore the practicalities in developing and deploying software
+        using
+        cutting - edge technologies with a team of experienced developers at the company and learn
+        best practice for software development to contribute to the success of organization by
+        providing
+        innovative solutions to real world projects.
+    </Objectives>
+
+    <Qualifications>
+        <Qualification>
+            <QName>Graduation</QName>
+            <Name>Bachelor of Science</Name>
+            <Specialisation>Computer Science</Specialisation>
+            <Institute>Mulund College of Commerce</Institute>
+            <Affiliation>Mumbai University</Affiliation>
+            <InstImage>https://media.9curry.com/uploads/organization/image/541/mumbai-university.png</InstImage>
+        </Qualification>
+
+        <Qualification>
+            <QName>HSC</QName>
+            <Name>Class 12th</Name>
+            <Specialisation>Physics, Chemistry, Maths</Specialisation>
+            <Institute>Chandrej Singh Children's Academy Jaunpur</Institute>
+            <Affiliation>Central Board of Secondary Education</Affiliation>
+            <InstImage>https://jknewsletter.com/wp-content/uploads/2022/10/CBSE-Logo-902x1024.png</InstImage>
+        </Qualification>
+
+        <Qualification>
+            <QName>SSC</QName>
+            <Name>Class 10th</Name>
+            <Specialisation>Science</Specialisation>
+            <Institute>Seth M. R. Jaipuria Schools Varanasi</Institute>
+            <Affiliation>Central Board of Secondary Education</Affiliation>
+            <InstImage>https://jknewsletter.com/wp-content/uploads/2022/10/CBSE-Logo-902x1024.png</InstImage>
+        </Qualification>
+
+    </Qualifications>
+
+    <Projects>
+        
+
+        <Project>
+            <Name>PayTM Clone</Name>
+            <PType>
+                <Type>WebPage Project</Type>
+                <Type>Static Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/Paytm.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/PayTM/</NavURL>
+        </Project>
+
+        <Project>
+            <Name>Video Player</Name>
+            <PType>
+                <Type>WebPage Project</Type>
+                <Type>Static Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/Video Player.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/Video Player/</NavURL>
+        </Project>
+
+        <Project>
+            <Name>Multi</Name>
+            <PType>
+                <Type>WebPage Projet</Type>
+                <Type>Static Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/Multi.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/Multi/</NavURL>
+        </Project>
+
+        <Project>
+            <Name>MaguwoHost</Name>
+            <PType>
+                <Type>WebPage Projet</Type>
+                <Type>Static Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/MaguwoHost.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/MaguwoHost/</NavURL>
+        </Project>
+
+        <Project>
+            <Name>LandScaper</Name>
+            <PType>
+                <Type>WebPage Projet</Type>
+                <Type>Static Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/LandScaper.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/Landscaper/</NavURL>
+        </Project>
+
+        <Project>
+            <Name>Carpenter</Name>
+            <PType>
+                <Type>Ecommerce Projet</Type>
+                <Type>Dynamic Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+                <Language>JSON</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/Carpenter.png</Image>
+            </ProjectImage>
+            <NavURL>Projects/Carpenter/register.html</NavURL>
+        </Project>
+
+        <Project>
+            <Name>Agricultiral Tools and Machinaries Shop</Name>
+            <PType>
+                <Type>Full Stack Project</Type>
+                <Type>Dynamic Project</Type>
+                <Type>Website</Type>
+            </PType>
+            <PLanguage>
+                <Language>PHP</Language>
+                <Language>HTML</Language>
+                <Language>CSS</Language>
+                <Language>JavaScript</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/Agriculture/Picture1.png</Image>
+                <Image>images/Project Images/Agriculture/Picture2.png</Image>
+                <Image>images/Project Images/Agriculture/Picture3.png</Image>
+                <Image>images/Project Images/Agriculture/Picture4.png</Image>
+                <Image>images/Project Images/Agriculture/Picture5.png</Image>
+                <Image>images/Project Images/Agriculture/Picture6.png</Image>
+                <Image>images/Project Images/Agriculture/Picture7.png</Image>
+                <Image>images/Project Images/Agriculture/Picture8.png</Image>
+                <Image>images/Project Images/Agriculture/Picture9.png</Image>
+                <Image>images/Project Images/Agriculture/Picture10.png</Image>
+            </ProjectImage>
+            <NavURL>components/preview.html</NavURL>
+        </Project>
+
+        <Project>
+            <Name>OCR Scanner Application</Name>
+            <PType>
+                <Type>Android Project</Type>
+                <Type>Dynamic Project</Type>
+                <Type>Android Application</Type>
+            </PType>
+            <PLanguage>
+                <Language>XML</Language>
+                <Language>Java</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/OCR/Picture1.png</Image>
+                <Image>images/Project Images/OCR/Picture2.png</Image>
+                <Image>images/Project Images/OCR/Picture3.png</Image>
+                <Image>images/Project Images/OCR/Picture4.png</Image>
+                <Image>images/Project Images/OCR/Picture5.png</Image>
+            </ProjectImage>
+            <NavURL>components/preview.html</NavURL>
+        </Project>
+
+        <Project>
+            <Name>NetClan Explorer Clone</Name>
+            <PType>
+                <Type>Android Project</Type>
+                <Type>Static Project</Type>
+                <Type>Android Application</Type>
+            </PType>
+            <PLanguage>
+                <Language>XML</Language>
+                <Language>Java</Language>
+            </PLanguage>
+            <ProjectImage>
+                <Image>images/Project Images/NetClan/Picture1.png</Image>
+                <Image>images/Project Images/NetClan/Picture2.png</Image>
+                <Image>images/Project Images/NetClan/Picture3.png</Image>
+            </ProjectImage>
+            <NavURL>components/preview.html</NavURL>
+        </Project>
+
+    </Projects>
+
+
+</data>

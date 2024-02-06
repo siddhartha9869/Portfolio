@@ -1,0 +1,37 @@
+<div class="left">
+    <h2 style="background-color: red; padding: 1rem;
+    border-radius: 100%;">SM</h2>
+</div>
+<div class="right">
+    <i class="fa-solid fa-bars"></i>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+</div>
+
+<script>
+    $(document).ready(function() {
+    $(".fa-bars").click(function() {
+        $("header .right ul").toggleClass("show");
+
+        // Check if ul is being shown
+        if ($("header .right ul").hasClass("show")) {
+            // Iterate over each li item and apply animation
+            $("header .right ul li").each(function(index) {
+                $(this).css({
+                    opacity: 0,
+                    marginLeft: "-20px" // Initial position off-screen
+                }).delay(100 * index).animate({
+                    opacity: 1,
+                    marginLeft: "0" // Animate to original position
+                }, 300);
+            });
+        }
+    });
+});
+
+</script>

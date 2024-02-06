@@ -1,0 +1,522 @@
+body{
+    margin: 0;
+    /* padding: 0; */
+    font-family: sans-serif;
+}
+
+/* ==================================ITEMS================================== */
+
+button{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #69ad31;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ==================================HEADER================================= */
+
+header{
+    display: flex;
+    padding: 0.2rem 7rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363636;
+    color: #b9b8b7;
+    
+}
+
+header .head_left h2{
+    font-size: 2rem;
+}
+
+header .head_right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    list-style-type: none;
+}
+
+header .head_right ul a{
+    text-decoration: none;
+    color: #b9b8b7;
+    font-size: 1rem;
+}
+
+/* ================================INTRO==================================== */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/intro-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.intro span{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.intro p{
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ================================WELCOME================================== */
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 6rem auto;
+    gap: 2%;
+}
+
+.welcome div{
+    width: 50%;
+}
+.welcome .welcome_text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.welcome .welcome_text span{
+    font-size: 1.3rem;
+    font-weight: 550;
+    padding-bottom: 10px;
+    /* margin-bottom: 10%; */
+}
+
+.welcome .welcome_text span span{
+    color: #6eab52;
+    font-weight: 600;
+    display: inline;
+}
+
+.welcome .welcome_text hr{
+    width: 7%;
+    background-color: #6eab52;
+    margin: 0;
+    height: 2px;
+}
+
+.welcome .welcome_text p{
+    font-size: 1.2rem;
+}
+
+.welcome .welcome_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 10%;
+}
+
+.welcome .welcome_card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.welcome .welcome_card div img{
+    width: 100%;
+    margin: auto;
+}
+
+.welcome .welcome_card div span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.welcome .welcome_card div p{
+    font-size: 1.1rem;
+}
+
+/* ================================SERVICES================================ */
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+    color: white;
+    background-color: #69ad31;
+}
+
+.services .service_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .service_text span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.services .service_text hr{
+    height: 1.5px;
+    width: 10%;
+    margin-top: 1.5rem;
+    background-color: #c2ddab;
+}
+
+.services .service_card{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.services .service_card .card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.services .service_card .card img{
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    border: 10px solid #78b546;
+}
+
+.services .service_card .card span{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.services .service_card .card p{
+    font-size: 1rem;
+}
+
+/* =================================GALARY================================== */
+
+.galary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+}
+
+.galary .galary_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galary .galary_text span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.galary .galary_text hr{
+    height: 1.5px;
+    margin-top: 1.5rem;
+    width: 10%;
+    background-color: #78b546;
+}
+
+.galary .galary_img{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.galary .galary_img .galary_img_btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.galary .galary_img .galary_img_btns button{
+    background-color: #e5e5e5;
+    color: #7c7375;
+    font-size: 13.5px;
+    font-weight: 550;
+}
+
+.galary .galary_img ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5%; */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.galary .galary_img ul li{
+    width: 25%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galary .galary_img ul li img{
+    width: 100%;
+    height: 14rem;
+}
+
+/* =================================TESTIMONIALS============================ */
+
+.testimonials{
+    background-image: url(images/testimonials-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 10%;
+    position: relative;
+}
+
+.testimonials div{
+    z-index: 2;
+}
+
+.testimonials .cr1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonials .cr1 span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.testimonials .cr1 hr{
+    height: 1.5px;
+    margin-top: 1.2rem;
+    width: 6%;
+    background-color: white;
+}
+
+.testimonials .cr1 p{
+    width: 70%;
+}
+
+.testimonials .slide_button{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonials .slide_button button{
+    background-color: #fff;
+    padding: 5px;
+}
+
+.testimonials #test_shadow{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #72ae37;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* ===============================CONTACT US================================ */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f6f6f6;
+    padding: 5% 10%;
+}
+
+.contact .contact_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact_text span{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.contact .contact_text hr{
+    height: 1.5px;
+    margin-top: 1.5rem;
+    width: 10%;
+    background-color: #78b546;
+}
+
+.contact .contact_text p{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    text-align: center;
+}
+
+.contact .contact_time{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    text-align: center;
+}
+
+.contact .contact_time .contact_time_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contact_time .contact_time_card span{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #565656;
+}
+
+.contact .contact_time .contact_time_card hr{
+    height: 3px;
+    margin: 15px;
+    width: 30%;
+    background-color: #dcdcdc;
+}
+
+.contact .contact_time .contact_time_card p{
+    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+}
+
+.contact .contact_message{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact .contact_message span{
+    font-size: 1.15rem;
+    text-align: center;
+    font-weight: 700;
+    color: #565656;
+}
+
+.contact .contact_message form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact_message form input[type = "text"],[type = "email"]{
+    width: 42.8%;
+    margin: 2%;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.contact .contact_message form input[type = "text"]::placeholder, .contact .contact_message form input[type = "email"]::placeholder{
+    color: #acacac;
+}
+
+.contact .contact_message form textarea{
+    width: 100%;
+    margin: 2%;
+    font-size: 1rem;
+    padding: 0.7rem;
+}
+
+.contact .contact_message form textarea::placeholder{
+    color: #acacac;
+}
+
+/* =================================FOOTER================================== */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5% 10%;
+    background-color: #363636;
+    align-items: center;
+    color: #595959;
+    justify-content: center;
+}
+
+footer .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+footer .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #69ad31;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #464646;
+}
+
+footer .text span{
+    color: #777777;
+    font-size: 1rem;
+    font-weight: 525;
+}

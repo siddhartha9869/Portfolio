@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #9d2c04;
+}
+
+h1{
+    font-size: 2.1rem;
+    color: brown;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(240, 229, 131);
+}
+
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(240, 229, 131);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    position: relative;
+}
+
+/* =================================HEADER=================== */
+header{
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9d2c04;
+}
+
+header .left .logo{
+    width: 5rem;
+    margin: 1rem;
+}
+
+header .left .logo img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+header .right ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header .right ul li{
+    /* width: max-content; */
+    padding: 3px;
+}
+
+header .right ul a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+header .right ul li:hover{
+    text-decoration: underline;
+    font-weight: 700;
+    padding: 0;
+}
+
+/* =============================CAROUSEL==================== */
+
+#carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel #slide {
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#carousel #slide img {
+    width: 100%;
+    margin: auto;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    /* left: 0; */
+    top: 0;
+    transform-origin: top left;
+    transition: all 0.5s ease-in-out;
+}
+
+#carousel #slide #car_image1 {
+    z-index: 2;
+}
+
+#carousel #slide #car_image2 {
+    z-index: 1;
+}
+
+#carousel #slide button {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    z-index: 3;
+    top: 15rem;
+    border: none;
+}
+
+#carousel #slide #forward {
+    right: 1%;
+}
+
+#carousel #slide #backward {
+    left: 1%;
+}
+
+#carousel #slide_btn{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#carousel #slide_btn button{
+    padding: 0.4rem;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background-color: #666666;
+    cursor: pointer;
+}
+
+/* =============================SERVICES==================== */
+
+#services{
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+#services .cards .card div{
+    width: 100%;
+    height: 14rem;
+    overflow: hidden;
+}
+
+#services .cards .card div img{
+    width: 100%;
+    height: 100%;
+}
+
+#services .cards .card h2{
+    color: #eb460b;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+
+#services .cards .card p{
+    width: 90%;
+    color: #7c341acc;
+    font-weight: 600;
+}
+
+#services .cards .card:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+/* =============================EXPLORE==================== */
+
+/* =============================REVIEWS==================== */
+
+#reviews{
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+#reviews .comment_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(240, 229, 131);
+}
+
+#reviews .comment_cards .cmt_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    text-align: center;
+    /* background-color: rgb(240, 229, 131); */
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    position: relative;
+}
+
+#reviews .comment_cards .cmt_card .comment{
+    background-color: #fcbc62;
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin: 0 3rem;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#reviews .comment_cards .cmt_card .comment h2, #reviews .comment_cards .cmt_card .comment p{
+    width: 100%;
+}
+
+#reviews .comment_cards .cmt_card .dp_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#reviews .comment_cards .cmt_card div img{
+    height: 5em;
+    width: 5em;
+    border-radius: 100%;
+}
+

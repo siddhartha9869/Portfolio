@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+section{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+section #vd_part{
+    width: 80%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+section #vd_part video{
+    width: 100%;
+}
+
+section #vd_part #video_control{
+    width: 95%;
+    position: absolute;
+    bottom: -3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#vd_part:hover #video_control{
+    bottom: 2rem;
+}
+
+section #vd_part #video_control .main_control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+}
+
+section #vd_part #video_control .main_control button{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+section #vd_part #video_control .main_control .volume{
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+section #vd_part #video_control .main_control #speaker:hover + .volume,
+section #vd_part #video_control .main_control .volume:hover {
+    opacity: 1;
+}
+
+
+section #vd_part #video_control .progress_control{
+    width: 80%;
+    align-items: end;
+}
+
+section #vd_part #video_control .progress_control input{
+    width: 100%;
+    right: 0;
+}
+
+section #vd_part #skip_section{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+section #vd_part #skip_section div{
+    width: 49%;
+    height: 100%;
+    font-size: 2rem;
+    color: #fff;
+}
+
+section #vd_part #skip_section #left{
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+section #vd_part #skip_section #right{
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+section #vd_part #skip_section div i{
+    z-index: 1;
+    opacity: 0;
+}
+
+section #list_part{
+    display: flex;
+    width: 20%;
+    background-color: #fff;
+    justify-content: center;
+}
+
+section #list_part ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+section #list_part ul li{
+    background-color: lightgray;
+    width: 80%;
+    text-align: center;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+section #list_part ul li:hover{
+    background-color: darkgray;
+}

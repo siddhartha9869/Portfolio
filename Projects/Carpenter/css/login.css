@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/login\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container .box{
+    border: 3px solid #9b2904;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-right: 8rem;
+    background-color: rgb(240, 229, 131);
+}
+
+.container .box #icon{
+    color: #9b2904;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+}
+
+form div input{
+    border: 2px solid grey;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    background-color: transparent;
+}
+
+form div i{
+    position: absolute;
+    top: 2rem;
+    left: 18px;
+    color: #9b2904;
+}
+
+form button{
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 25px;
+    background-color: #ca3605;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form #links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+#warn{
+    color: red;
+    border: 2px solid red;
+    border-radius: 25px;
+    padding: 1rem;
+    display: none;
+}

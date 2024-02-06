@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div id="vd_part">
+            <video src="videos/vid1.mp4" ></video>
+            <div id="video_control">
+                <div class="main_control">
+                    <button id="prev" onclick="prev_click()"><i class="fa-solid fa-backward-step"></i></button>
+                    
+                    <button id="play_pause" onclick="play_pause()">
+                        <i class="fa-solid fa-play"></i>
+                        
+                    </button>
+
+                    <button id="next" onclick="next()"><i class="fa-solid fa-forward-step"></i></button>
+                    
+                    <button id="speaker" onclick="speaker()">
+                        <i class="fa-solid fa-volume-high"></i>
+                        
+                    </button>
+
+                    <div class="volume">
+                        <input type="range"  id="volume_range" onchange="adj_volume()">
+                    </div>
+                </div>
+                <div class="progress_control">
+                    <input type="range" id="duration_range" value="0" onchange="duration_skip()">
+                </div>
+            </div>
+
+            <div id="skip_section">
+                <div id="left" ondblclick="leftSkip()"> <i class="fa-solid fa-backward-fast" id="skip_left"></i> </div>
+                <div id="right" ondblclick="rightSkip()"> <i class="fa-solid fa-forward-fast" id="skip_right"></i> </div>
+            </div>
+        </div>
+        <div id="list_part"><ul></ul></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

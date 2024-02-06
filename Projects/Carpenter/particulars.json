@@ -1,0 +1,204 @@
+{
+    "particulars": [
+        {
+            "id":1,
+            "sample_img": "images/items/image1.jpeg",
+            "article": "Chair",
+            "material_cost": 3000,
+            "labour_charge": 900,
+            "description": "Comfortable and stylish chair for various settings."
+        },
+        {
+            "id":2,
+            "sample_img": "images/items/image2.jpg",
+            "article": "Kitchen Platform",
+            "material_cost": 5000,
+            "labour_charge": 1500,
+            "description": "Durable and spacious kitchen platform for modern kitchens."
+        },
+        {
+            "id":3,
+            "sample_img": "images/items/image3.jpeg",
+            "article": "Desk",
+            "material_cost": 2500,
+            "labour_charge": 800,
+            "description": "Sleek and functional desk suitable for home or office use."
+        },
+        {
+            "id":4,
+            "sample_img": "images/items/image4.jpg",
+            "article": "Bookshelf",
+            "material_cost": 3500,
+            "labour_charge": 1000,
+            "description": "Sturdy bookshelf with adjustable shelves for organizing your books."
+        },
+        {
+            "id":5,
+            "sample_img": "images/items/image5.jpeg",
+            "article": "Wardrobe",
+            "material_cost": 4500,
+            "labour_charge": 1200,
+            "description": "Spacious wardrobe with hanging and drawer storage."
+        },
+        {
+            "id":6,
+            "sample_img": "images/items/image6.jpeg",
+            "article": "Dining Table",
+            "material_cost": 4000,
+            "labour_charge": 1100,
+            "description": "Elegant dining table for family gatherings and meals."
+        },
+        {
+            "id":7,
+            "sample_img": "images/items/image7.jpeg",
+            "article": "Coffee Table",
+            "material_cost": 2800,
+            "labour_charge": 850,
+            "description": "Modern and functional coffee table for your living room."
+        },
+        {
+            "id":8,
+            "sample_img": "images/items/image8.webp",
+            "article": "Cabinet",
+            "material_cost": 3200,
+            "labour_charge": 950,
+            "description": "Versatile cabinet with storage space for various items."
+        },
+        {
+            "id":9,
+            "sample_img": "images/items/image9.jpeg",
+            "article": "Bed",
+            "material_cost": 4800,
+            "labour_charge": 1300,
+            "description": "Comfortable bed with a stylish design for a good night's sleep."
+        },
+        {
+            "id":10,
+            "sample_img": "images/items/image10.png",
+            "article": "Mirror Frame",
+            "material_cost": 2000,
+            "labour_charge": 700,
+            "description": "Decorative mirror frame to add style to your space."
+        },
+        {
+            "id":11,
+            "sample_img": "images/items/image11.jpeg",
+            "article": "Table",
+            "material_cost": 3200,
+            "labour_charge": 950,
+            "description": "Functional table suitable for various purposes."
+        },
+        {
+            "id":12,
+            "sample_img": "images/items/image12.webp",
+            "article": "Shelf",
+            "material_cost": 2200,
+            "labour_charge": 800,
+            "description": "Wall-mounted shelf for organizing and displaying items."
+        },
+        {
+            "id":13,
+            "sample_img": "images/items/image13.jpeg",
+            "article": "Lamp Stand",
+            "material_cost": 1800,
+            "labour_charge": 700,
+            "description": "Stylish lamp stand to enhance your lighting setup."
+        },
+        {
+            "id":14,
+            "sample_img": "images/items/image14.jpeg",
+            "article": "Wall Unit",
+            "material_cost": 3800,
+            "labour_charge": 1100,
+            "description": "Integrated wall unit for storage and display purposes."
+        },
+        {
+            "id":15,
+            "sample_img": "images/items/image15.jpeg",
+            "article": "Couch",
+            "material_cost": 4200,
+            "labour_charge": 1200,
+            "description": "Comfortable couch for relaxing and entertaining guests."
+        },
+        {
+            "id":16,
+            "sample_img": "images/items/image16.jpeg",
+            "article": "Panelling",
+            "material_cost": 3000,
+            "labour_charge": 900,
+            "description": "Decorative wall panelling to enhance the room's aesthetics."
+        },
+        {
+            "id":17,
+            "sample_img": "images/items/image17.jpeg",
+            "article": "Couch",
+            "material_cost": 4200,
+            "labour_charge": 1200,
+            "description": "Comfortable couch for relaxing and entertaining guests."
+        },
+        {
+            "id":18,
+            "sample_img": "images/items/image18.jpeg",
+            "article": "Ceiling",
+            "material_cost": 2800,
+            "labour_charge": 850,
+            "description": "Decorative ceiling design to add charm to your space."
+        },
+        {
+            "id":19,
+            "sample_img": "images/items/image19.jpg",
+            "article": "Bed Frame",
+            "material_cost": 4800,
+            "labour_charge": 1300,
+            "description": "Stylish bed frame to complement your bedroom decor."
+        },
+        {
+            "id":20,
+            "sample_img": "images/items/image20.webp",
+            "article": "Desk",
+            "material_cost": 2500,
+            "labour_charge": 800,
+            "description": "Sleek and functional desk suitable for home or office use."
+        },
+        {
+            "id":21,
+            "sample_img": "images/items/image21.jpeg",
+            "article": "Dresser",
+            "material_cost": 3500,
+            "labour_charge": 1000,
+            "description": "Elegant dresser for organizing your clothing and accessories."
+        },
+        {
+            "id":22,
+            "sample_img": "images/items/image22.jpg",
+            "article": "Side Table",
+            "material_cost": 1800,
+            "labour_charge": 700,
+            "description": "Compact side table for convenient placement in any room."
+        },
+        {
+            "id":23,
+            "sample_img": "images/items/image23.jpeg",
+            "article": "Wall Shelf",
+            "material_cost": 2200,
+            "labour_charge": 800,
+            "description": "Functional wall shelf for displaying your favorite items."
+        },
+        {
+            "id":24,
+            "sample_img": "images/items/image24.jpeg",
+            "article": "Artistic Painting",
+            "material_cost": 2000,
+            "labour_charge": 700,
+            "description": "Unique artistic painting to add a creative touch to your space."
+        },
+        {
+            "id":25,
+            "sample_img": "images/items/image25.jpg",
+            "article": "Restoration",
+            "material_cost": 3000,
+            "labour_charge": 900,
+            "description": "Restoration service to revive and renew your furniture."
+        }
+    ]
+}

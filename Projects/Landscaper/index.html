@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acc56d6b3d.js" crossorigin="anonymous"></script>
+    <title>Layout</title>
+</head>
+<body>
+    <header>
+        <div class="head_left">
+            <h2>Landscaper</h2>
+        </div>
+
+        <div class="head_right">
+            <ul>
+                <li><a href="#welcome">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#galary">GALARY</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="intro" id="intro">
+        <span>LANDSCAPING SERVICES</span>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit.saepe cupiditate error?</P>
+        <button>MORE INFO</button>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="welcome" id="welcome">
+        <div class="welcome_text">
+            <span>Welcome to <span>Landscaper</span></span>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias facere voluptatum eos earum assumenda ea  minus, pariatur maiores? <br><br>Voluptate eaque architecto totam quos impedit commodi fugit amet obcaecati sunt dolores, nesciunt, beatae provident. Quaerat beatae necessitatibus, nihil qui magnam minima!</p>
+            <button>View All Services</button>
+        </div>
+        <div class="welcome_card">
+            <div class="welcome_sub_card">
+                <img src="images/service-2.jpg" alt="">
+                <span>Garden Care</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod obcaecati suscipit debitis aspernatur. Ad nesciunt, corporis sit debitis voluptatum commodi velit eius est tempora itaque.</p>
+            </div>
+            <div class="welcome_sub_card">
+                <img src="images/service-1.jpg" alt="">
+                <span>Lawn Care</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit assumenda quos rerum provident rem quo veniam eligendi sint dolores, repellat optio officiis doloremque ad iste.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="services" id="services">
+        <div class="service_text">
+            <span>Our services</span>
+            <hr>
+            <p>Lorem, ipsum adipisicing elit. Excepturi quae, voluptatum modi maiores minus quisquam?</p>
+        </div>
+        <div class="service_card">
+            <div class="card">
+                <img src="images/service-1.jpg" alt="">
+                <span>Lawn Care</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis quibusdam, exercitationem ipsum rem dolore? Optio temporibus voluptas maiores repellendus.</p>
+            </div>
+            <div class="card">
+                <img src="images/service-2.jpg" alt="">
+                <span>Landscape Design</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero, eius laborum quas adipisci quaerat quod totam facere dignissimos tempore?</p>
+            </div>
+            <div class="card">
+                <img src="images/service-3.jpg" alt="">
+                <span>Tree Care</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa aut animi aperiam! Possimus hic vitae architecto. At nihil debitis veniam!</p>
+            </div>
+            <div class="card">
+                <img src="images/service-4.jpg" alt="">
+                <span>Spring & Fall Cleanup</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in deserunt corporis, quae deleniti nemo cupiditate quis dolores! Alias, numquam!</p>
+            </div>
+        </div>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="galary" id="galary">
+        <div class="galary_text">
+            <span>Project Galary</span>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, excepturi.</p>
+        </div>
+        <div class="galary_img">
+            <div class="galary_img_btns">
+                <button class="galary_btn" id="all"  onclick="all_galary()">ALL</button>
+                <button class="galary_btn" id="lawn_care" onclick="lawn_galary()">LAWN CARE</button>
+                <button class="galary_btn" id="garden_care" onclick="garden_galary()">GARDEN CARE</button>
+                <button class="galary_btn" id="planting" onclick="planting_galary()">PLANTING</button>
+            </div>
+            <ul id="galary_image">
+                <li><img src="images/galary/01-large.jpg" alt=""></li>
+                <li><img src="images/galary/02-large.jpg" alt=""></li>
+                <li><img src="images/galary/03-large.jpg" alt=""></li>
+                <li><img src="images/galary/04-large.jpg" alt=""></li>
+                <li><img src="images/galary/05-large.jpg" alt=""></li>
+                <li><img src="images/galary/06-large.jpg" alt=""></li>
+                <li><img src="images/galary/07-large.jpg" alt=""></li>
+                <li><img src="images/galary/08-large.jpg" alt=""></li>
+                <li><img src="images/galary/09-large.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="testimonials" id="testimonials">
+        <div class="cr1">
+            <span>Testimonials</span>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, corrupti. <br><br><br>-John DOE, Parker county. TX</p>
+        </div>
+        <div class="slide_button">
+            <button></button><button></button><button></button><button></button>
+        </div>
+        <div id="test_shadow"></div>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <div class="contact">
+        <div class="contact_text">
+            <span>Contact Us</span>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam! Aliquam, velit.</p>
+        </div>
+        <div class="contact_time">
+            <div class="contact_time_card">
+                <span>ADDRESS</span>
+                <hr>
+                <p>4321 California, St <br> San Francisco, CA 12345</p>
+            </div>
+            <div class="contact_time_card">
+                <span>WORKING HOURS</span>
+                <hr>
+                <p>Monday-Saturday: 07:00-18:00 <br>Sunday: CLOSED</p>
+            </div>
+            <div class="contact_time_card">
+                <span>CONTACT INFO</span>
+                <hr>
+                <p>Phone: +1 123 456 1234 <br>Email: info@company.com</p>
+            </div>
+        </div>
+        <div class="contact_message">
+            <span>LEAVE US A MESSAGE</span>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea name="message" id="" placeholder="Message" cols="30" rows="5"></textarea>
+                <button>SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+<!-- ======================================================================================================================================= -->
+
+    <footer>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+        <div class="text">
+            &copy;2016 Landscaper. Designed by <span>TemplateWire</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

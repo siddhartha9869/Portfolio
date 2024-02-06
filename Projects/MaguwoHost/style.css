@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* =================================COMPONENTS================================== */
+
+.yellow_btn{
+    background-color: #ffdf56;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-color: white;
+    cursor: pointer;
+}
+
+
+/* =================================COMMON CSS================================== */
+
+.partition{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#msg_t .right, header .right, #clients .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+/* =================================MSG TOP===================================== */
+
+#msg_t{
+    background-color: #232843;
+    color: white;
+    padding: 0.1rem 8%;
+}
+
+#msg_t .right hr{
+    background-color: #fff;
+    height: 2rem;
+    width: 1px;
+}
+
+
+/* =================================HEADER====================================== */
+
+header{
+    padding: 0.8rem 7%;
+}
+
+header .left img{
+    width: 12rem;
+}
+
+header .right ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-left: 0;
+    gap: 1rem;
+}
+
+header .right ul a{
+    color: grey;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+/* =================================INTRO======================================= */
+
+#intro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #b7c6c6;
+}
+
+#intro .intro_body{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+#intro .intro_body h1{
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+}
+
+#intro .intro_body p{
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+#intro .intro_body form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 2px;
+    border: 1rem solid #dcdcdc;
+}
+
+#intro .intro_body form *{
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#intro .intro_body form input::placeholder{
+    color: #968787;
+}
+
+#intro .intro_body form select{
+    color: rgb(95, 94, 94);
+}
+
+#intro .img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#intro .img img{
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+/* =================================SERVICES==================================== */
+
+#services div{
+    width: 50%;
+    padding: 8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#services div button{
+    background-color: transparent;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+#services div h3{
+    font-size: 2rem;
+}
+
+#services .left p{
+    font-size: 1rem;
+    color: lightgray;
+}
+
+#services .left{
+    background-color: #232843;
+}
+
+#services .right{
+    background-color: #ffdf56;
+}
+
+#services .right h1{
+    font-size: 9.2rem;
+    color: black;
+    margin: 0;
+}
+
+
+/* =================================FEATURES==================================== */
+
+#features{
+    padding: 3rem 6rem;
+    background-color: #fbf8f1;
+    position: relative;
+}
+
+#features .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+#features .top h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#features .top p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: rgb(92, 90, 90);
+}
+
+#features .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    z-index: 2;
+}
+
+#features .bottom div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#features .bottom div *{
+    margin: 0;
+}
+
+#features .bottom div hr{
+    height: 3px;
+    width: 7rem;
+    background-color: #8b8c97;
+}
+
+#features .bottom div h1{
+    color: #ffdf56;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#features .bottom div p{
+    color: rgb(110, 108, 108);
+    font-size: 1rem;
+}
+
+#features .features_bg{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =================================CLIENTS===================================== */
+
+#clients{
+    padding: 3rem 9rem 0;
+}
+
+#clients .left h1{
+    font-size: 2.2rem;
+    color: #575757;
+    margin: 0;
+}
+
+#clients .left p{
+    width: 60%;
+    color: darkgray;
+}
+
+
+/* =================================REVIEWS===================================== */
+
+#reviews{
+    padding: 1rem 10rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#reviews .review_cards{
+    position: relative;
+}
+
+#reviews div p{
+    padding: 1rem 2rem;
+    color: rgb(113, 112, 112);
+    background-color: #fbf8f8;
+    font-style: italic;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#reviews div p span{
+    color: rgb(59, 58, 58);
+    font-weight: 550;
+}
+
+#reviews div img{
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    border-radius: 100%;
+    border: 4px solid #dcdcdc;
+}
+
+
+/* =================================PLANS======================================= */
+
+#plans{
+    padding: 3rem 12rem;
+    background-color: #232843;
+    color: white;
+}
+
+#plans .left h1{
+    font-size: 2rem;
+}
+
+#plans .left p{
+    font-size: 1.2rem;
+    color: #636474;
+    font-weight: 550;
+}
+
+#plans .right button{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+/* ================================FOOTER======================================= */
+
+footer{
+    background-color: #373b54;
+    padding: 3rem 9rem;
+}
+
+footer .top .right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    color: white;
+}
+
+footer .top .right span{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+footer .top .right ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .top .right ul hr{
+    width: 5rem;
+}
+
+footer .top .right ul li{
+    margin-top: 5px;
+}
+
+footer .top .right ul a{
+    color: white;
+
+    text-decoration: none;
+}
+
+footer .top .right .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .top .right .icons a{
+    text-decoration: none;
+    color: #ffdf56;
+}
+
+footer .bottom{
+    text-align: center;
+    color: rgb(231, 229, 229);
+    font-size: 1.1rem;
+}
+
+footer .bottom #heart_icon{
+    font-size: 1.8rem;
+    color: red;
+}
+
+footer .bottom #bt_text{
+    font-size: 1.1rem;
+    color: #dbb455;
+}

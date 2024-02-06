@@ -1,0 +1,1406 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Inter,sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #00baf2;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.paytm_learnmore_btn {
+    display: inline;
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+    text-decoration: none;
+    width: 189px;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding: 0.9rem 0 0.9rem 1rem;
+    background-color: #002970;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+.paytm_learnmore_btn:hover{
+    background-color: #00baf2;
+}
+
+.paytm_learnmore_btn span{
+    margin-left: 5px;
+}
+
+.paytm_learnmore_btn #icon_chevron {
+    position: relative;
+    top: 1px;
+    left: -16px;
+    opacity: 1;
+    /* right: 0; */
+    /* margin-top: 0; */
+    margin: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.paytm_learnmore_btn #icon_arrow {
+    position: relative;
+    top: 1px;
+    left: 0;
+    margin-top: 0px;
+    margin-left: 4px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.paytm_learnmore_btn:hover #icon_chevron{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.paytm_learnmore_btn:hover #icon_arrow{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+header .fa-chevron-right{
+    position: relative;
+    top: 0px;
+    /* left: 2rem; */
+    margin-top: 0.7rem;
+    margin-left: 0.2rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+header .fa-arrow-right{
+    position: relative;
+    top: 0px;
+    left: 1.2rem;
+    margin-top: 0.7rem;
+    margin-left: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+.mob_head{
+    display: none;
+}
+
+
+header{
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.5rem;
+    z-index: 2;
+    box-shadow: 0 5px 20px rgba(0,41,112,.1);
+}
+
+a:hover{
+    background-color: rgba(172, 170, 170, 0.092);
+}
+
+header #mid ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+header #mid a{
+    font-size: 17px;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    color: black;
+}
+
+header #mid  .head_drop1 .drop1 .head_drop2 .extend1, header #mid  .head_drop1 .drop1 .head_drop2 .drop2 .head_drop3 .extend2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header #mid  .head_drop1 .drop1{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: max-content;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+header #mid  .head_drop1 .drop1 .head_drop2 .drop2{
+    left: 100%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: max-content;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+header #mid  .head_drop1 .drop1 .head_drop2 .drop2 .head_drop3 .drop3{
+    left: 100%;
+    top: 0%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: max-content;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+header #mid ul .head_drop1:hover .drop1{
+    display: block;
+    font-size: 12px;
+}
+
+header #mid ul .head_drop1 .drop1 .head_drop2:hover .drop2{
+    display: block;
+    font-size: 12px;
+}
+
+header #mid ul .head_drop1 .drop1 .head_drop2 .drop2 .head_drop3:hover .drop3{
+    display: block;
+    font-size: 12px;
+}
+
+
+
+header #mid ul .head_drop1 .drop1 .head_drop2:hover .extend1_chevron{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+header #mid ul .head_drop1 .drop1 .head_drop2 .drop2 .head_drop3:hover .extend2_chevron{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+} 
+
+header #mid ul .head_drop1 .drop1 .head_drop2:hover .extend1_arrow{
+    opacity: 1;
+}
+
+header #mid ul .head_drop1 .drop1 .head_drop2 .drop2 .head_drop3:hover .extend2_arrow{
+    opacity: 1;
+} 
+
+
+
+
+header #right {
+    display: flex;
+    background-color: #00baf2;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    
+}
+
+header #right:hover {
+    background-color: #002970;
+}
+
+header #right:hover div{
+    background-color: #00baf2;
+}
+
+header #right a{
+    padding: 10px 4px 10px 14px;
+    text-decoration: none;
+    color: white;
+}
+
+header #right div{
+    background-color: #002970;
+    padding: 10px;
+    margin: 2px 2px 2px 1px;
+    border-radius: 25px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.tag_top{
+    font-size: 1rem;
+    color: rgb(63, 63, 63);
+    text-align: center;
+}
+
+.tag_top a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+#intro .left, #intro .right{
+    padding: 7% 0;
+    width: 40%;
+    
+}
+
+#intro .left{
+    margin-left: 10%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center
+}
+
+#intro .left img{
+    height: 5rem;
+    width: 5rem;
+}
+
+#intro .left h1{
+    margin-bottom: 0;
+    font-size: 3rem;
+    
+}
+
+#intro .left p{
+    margin-bottom: 0;
+    padding-right: 10%;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 500;
+}
+
+.paytm_download_button{
+    display: inline;
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+    text-decoration: none;
+    width: 40%;
+    padding: 1rem;
+    background-color: black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 2px solid black;
+}
+
+.paytm_download_button:hover{
+    background-color: white;
+    color: black;
+}
+
+#intro .right img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#bill_payment{
+    color: white;
+    padding: 4% 8%;
+    background-color: #00baf2;
+}
+
+#book_buy{
+    color: white;
+    padding: 4% 8%;
+    background-color: #0f4a8a ;
+}
+
+.up h1{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.down div{
+    padding: 2% 2% 0% 2%;
+    width: 10%;
+    display: flex;
+    /* text-align: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.down div:hover{
+    background-color: #00afe3;
+}
+
+#book_buy .down div:hover{
+    background-color: #0d3e80;
+}
+
+.down div img{
+    width: 64px;
+}
+
+.down div p{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.down div p span{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#instrument{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 80%;
+    margin: 5% auto 0;
+}
+
+#instrument h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#instrument .instru_sub{
+    border-radius: 20px;
+    display: flex;
+    padding: 4rem 3rem 4rem 8rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#instrument .instru_sub div{
+    width: 50%;
+}
+
+#instrument .instru_sub .left_instru{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#instrument .instru_sub .left_instru .wallet{
+    width: 150px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#instrument .instru_sub .left_instru .wallet img{
+    height: 77px;
+    width: auto;
+}
+
+#instrument .instru_sub .left_instru h2{
+    width: 90%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#instrument .instru_sub .left_instru p{
+    /* padding: 24px 0 30px; */
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#instrument .instru_sub .right_instru img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#direct_pay{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3% auto;
+}
+
+#direct_pay h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#direct_pay .direct_pay_sub{
+    display: flex;
+    border-radius: 20px;
+    padding: 2rem 3rem 4rem 8rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#direct_pay .direct_pay_sub div{
+    width: 50%;
+}
+
+#direct_pay .direct_pay_sub .left_direct_pay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#direct_pay .direct_pay_sub .left_direct_pay .wallet{
+    width: fit-content;
+    width: 165px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#direct_pay .direct_pay_sub .left_direct_pay .wallet img{
+    height: 77px;
+    width: auto;
+}
+
+#direct_pay .direct_pay_sub .left_direct_pay h2{
+    width: 90%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#direct_pay .direct_pay_sub .left_direct_pay p{
+    /* padding: 24px 0 30px; */
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#direct_pay .direct_pay_sub .right_direct_pay img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#post_pay{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 80%;
+    margin: 3% auto;
+}
+
+#post_pay h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#post_pay .post_pay_sub{
+    border-radius: 20px;
+    display: flex;
+    padding: 2rem 3rem 4rem 8rem;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#post_pay .post_pay_sub div{
+    width: 50%;
+}
+
+#post_pay .post_pay_sub .left_post_pay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#post_pay .post_pay_sub .left_post_pay .wallet{
+    width: fit-content;
+    width: 165px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#post_pay .post_pay_sub .left_post_pay .wallet img{
+    height: 77px;
+    width: auto;
+}
+
+#post_pay .post_pay_sub .left_post_pay h2{
+    width: 90%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#post_pay .post_pay_sub .left_post_pay p{
+    /* padding: 24px 0 30px; */
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#post_pay .post_pay_sub .right_post_pay img{
+    width: 100%;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#post_pay .post_pay_sub .left_post_pay .paytm_learnmore_button{
+    display: inline;
+    color: white;
+    text-align: center;
+    margin: 5% 0;
+    width: 130px;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    padding: 0.9rem;
+    background-color: #002970;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
+#post_pay .post_pay_sub .left_post_pay .paytm_learnmore_button:hover{
+    background-color: #00baf2;
+}
+
+#icon_chevron{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    opacity: 1;
+    margin-top: 10px;
+    margin-left: 125.5px;
+    transition: opacity 0.5s ease-in;
+}
+
+#icon_arrow{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    margin-top: 10px;
+    margin-left: 126px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+#post_pay .post_pay_sub .left_post_pay .paytm_learnmore_button:hover #icon_chevron{
+    opacity: 0;
+}
+
+#post_pay .post_pay_sub .left_post_pay .paytm_learnmore_button:hover #icon_arrow{
+    opacity: 1;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#bank_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 5%;
+    margin: auto;
+}
+
+#bank_card div{
+    width: 40%;
+    border-radius: 20px;
+    padding: 70px 64px 0;
+    /* display: block; */
+    background-color: #fff;
+}
+
+#bank_card div .card_logo_img{
+    height: 20px;
+    width: auto;
+}
+
+#bank_card div h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#bank_card div p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#bank_card div .card_body_img{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#financial_service{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    /* width: 80%; */
+    padding: 5% 11%;
+    background-color: #fff;
+    margin: 5% auto 0;
+}
+
+#financial_service h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#financial_service .financial_sub{
+    border-radius: 20px;
+    display: flex;
+    padding: 4rem 0;
+    /* background-color: white; */
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10rem;
+}
+
+#financial_service .financial_sub div{
+    width: 50%;
+}
+
+#financial_service .financial_sub .left_financial{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+#financial_service .financial_sub .left_financial .left_top_img img{
+    width: 212px;
+}
+
+#financial_service .financial_sub .left_financial h2{
+    width: 90%;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#financial_service .financial_sub .left_financial p{
+    /* padding: 24px 0 30px; */
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+
+#financial_service .financial_sub .right_financial img{
+    width: 100%;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+.main_section{
+    /* background-color: #f5f7fa; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 5rem 8rem;
+    gap: 10%;
+}
+
+.main_section div{
+    width: 50%;
+    padding: 2rem;
+}
+
+.main_section .img_ka_div img{
+    width: 100%;
+}
+
+.main_section .text_ka_div .top_wala_img img{
+    height: 54px;
+}
+
+.main_section .text_ka_div h2{
+    font-size: 40px;
+    font-weight: 700;
+    width: 390px;
+}
+
+.main_section .text_ka_div p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 390px;
+}
+
+.main_section .text_ka_div .paytm_learnmore_btn{
+    top: 2rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#paytm_money{
+    background-color: #f5f7fa;
+}
+
+#paytm_money .main_section{
+    background-image: url(Images/paytm_money/div_bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#paytm_money .main_section p{
+    width: 98%
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#paytm_insurance{
+    background-color: #fff;
+}
+
+#paytm_insurance .main_section p{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#personal_loan{
+    background-color: #f5f7fa;
+}
+
+#personal_loan .main_section p{
+    width: 100%;
+    font-size: 17px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+#business_tools{
+    background-color: white;
+    padding: 8rem 6rem;
+}
+
+#business_tools .up h1{
+    padding-bottom: 50px;
+    width: 480px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#business_tools .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#business_tools .down .busi_cards{
+    width: 30%;
+    align-self: center;
+    background: none;
+}
+
+#business_tools .down .busi_cards img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#business_tools .down .busi_cards h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#business_tools .down .busi_cards h1 span{
+    display: block;
+}
+
+#business_tools .down div p{
+    font-size: 20px;
+    height: 4rem;
+    font-weight: 500;
+}
+
+#business_tools .down div .business_tools_card_link{
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    background: none;
+}
+
+#business_tools .down div .business_tools_card_link a{
+    width: 5.3rem;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+}
+
+#business_tools .down div .business_tools_card_link #business_card_link_arrow{
+    position: absolute;
+    left: 4rem;
+}
+
+#business_tools .down div .business_tools_card_link:hover #business_card_link_arrow{
+    left: 6rem;
+    transition: all 0.5s ease-in-out ;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    background-color: #f5f7fa;
+    padding: 3rem 4rem;
+
+}
+
+footer #footer_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer #footer_head div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: start; */
+}
+
+footer #footer_head .left span{
+    width: 210px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+footer #footer_head .right a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 1.5rem;
+}
+
+footer #divider{
+    color: #ccc;
+    margin: 4rem 0;
+}
+
+footer #footer_body summary div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+footer #footer_body .footer_body_item{
+    display: block;
+    margin-top: 3rem;
+}
+
+footer #footer_body .footer_body_item .showing_content{
+    /* position: relative; */
+    display: inline;
+    cursor: pointer;
+}
+
+footer #footer_body .footer_body_item .showing_content div{
+    display: inline;
+    position: absolute;
+    top: auto;
+    margin-left: 5px;
+    margin-top: 14px;
+    margin-right: 4rem;
+    width: -webkit-fill-available;
+    border-bottom: 1px solid #ccc;
+}
+
+
+footer #footer_body .footer_body_item .hidden_content ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+footer #footer_body .footer_body_item .hidden_content ul a{
+    text-decoration: none;
+    width: 3rem;
+    font-weight: 600;
+    color: #7d7e7f;
+    font-size: 12.5px;
+    width: fit-content;
+}
+
+footer #footer_body .footer_body_item .hidden_content ul a:hover{
+    color: black;
+    transition: 1s ease-in-out;
+    font-size: 13px;
+    background: none;
+}
+
+
+@media (min-width:100px) and (max-width:400px){
+    body{
+        padding: 5px;
+    }
+    .header{
+        display: none;
+    }
+
+    .mob_head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #intro .right{
+        width: 80%;
+        padding: 0 9rem;
+    }
+
+    #intro .left img{
+        display: none;
+    }
+
+    .paytm_download_button{
+        width: 70%;
+    }
+
+    #intro .left{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #intro .left h1{
+        font-size: 2rem;
+    }
+
+    #bill_payment, #book_buy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #bill_payment .up h1, #book_buy .up h1{
+        font-size: 1.3rem;
+    }
+
+    #bill_payment .down, #book_buy .down{
+        display: flex;
+        /* flex-wrap: wrap; */
+        width: 100%;
+        /* margin: auto; */
+        /* justify-content: center; */
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    #bill_payment .down div, #book_buy .down div{
+        width: 80%;
+    }
+
+    #bill_payment .down div p, #book_buy .down div p{
+        font-size: 17px;
+        font-weight: 500;
+        width: 7rem;
+    }
+
+
+    #instrument{
+        width: 100%;
+        display: flex;
+        /* padding: 10px; */
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #instrument h1{
+        font-size: 2rem;
+        /* display: block; */
+    }
+
+    #instrument .instru_sub{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #instrument .instru_sub .right_instru{
+        width: 80%;
+        margin: 0;
+        /* padding: 0 9rem; */
+    }
+
+    #instrument .instru_sub .right_instru img{
+        width: 100%
+    }
+
+    #instrument .instru_sub .left_instru .wallet{
+        display: none;
+    }
+
+    #instrument .instru_sub .left_instru {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #instrument .instru_sub .left_instru h2{
+        font-size: 1.5rem;
+    }
+
+    #direct_pay{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    #direct_pay .direct_pay_sub{
+        display: flex;
+        padding: 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    #direct_pay .direct_pay_sub .right_direct_pay{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    #direct_pay .direct_pay_sub .left_direct_pay{
+        width: 80%
+    }
+
+    #direct_pay .direct_pay_sub .left_direct_pay .wallet{
+        display: none;
+    }
+
+    #direct_pay .direct_pay_sub .left_direct_pay h2{
+        font-size: 1.5rem;
+    }
+
+
+    #post_pay{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    #post_pay .post_pay_sub{
+        display: flex;
+        padding: 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    #post_pay .post_pay_sub .right_post_pay{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    #post_pay .post_pay_sub .left_post_pay{
+        width: 80%
+    }
+
+    #post_pay .post_pay_sub .left_post_pay .wallet{
+        display: none;
+    }
+
+    #post_pay .post_pay_sub .left_post_pay h2{
+        font-size: 1.5rem;
+    }
+
+/* ============================================================= */
+
+    #bank_card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: scroll;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #bank_card div{
+        width: 50%;
+        padding: 0;
+    }
+
+    #bank_card div .card_logo_img{
+        max-width: 70%;
+    }
+
+    #bank_card div img{
+        width: 100%;
+    }
+
+    #bank_card div h1{
+        font-size: 1.5rem;
+    }
+
+
+    #financial_service{
+        width: 100%;
+        display: flex;
+        padding: 5px;
+        /* margin: 10px; */
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    #financial_service h1{
+        font-size: 1.5rem;
+        /* display: block; */
+    }
+
+    #financial_service .financial_sub{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    #financial_service .financial_sub .right_financial{
+        width: 80%;
+        margin: 0;
+        /* padding: 0 9rem; */
+    }
+
+    #financial_service .financial_sub .right_financial img{
+        width: 100%
+    }
+
+    #financial_service .financial_sub .left_financial .wallet{
+        display: none;
+    }
+
+    #financial_service .financial_sub .left_financial {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #financial_service .financial_sub .left_financial h2{
+        font-size: 1.5rem;
+    }
+
+    /* ================================================================= */
+
+    #paytm_money{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 5px; */
+    }
+
+    #paytm_money .main_section{
+        display: flex;
+        padding: 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    #paytm_money .main_section .img_ka_div{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    #paytm_money .main_section .text_ka_div{
+        width: 80%
+    }
+
+    #paytm_money .main_section .text_ka_div .img_ka_div{
+        display: none;
+    }
+
+    #paytm_money .main_section .text_ka_div h2{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    /* =============================================================== */
+
+    #paytm_insurance{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 5px; */
+    }
+
+    #paytm_insurance .main_section{
+        display: flex;
+        padding: 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    #paytm_insurance .main_section .img_ka_div{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    #paytm_insurance .main_section .text_ka_div{
+        width: 80%
+    }
+
+    #paytm_insurance .main_section .text_ka_div .img_ka_div{
+        display: none;
+    }
+
+    #paytm_insurance .main_section .text_ka_div h2{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+
+    #personal_loan{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 5px; */
+    }
+
+    #personal_loan .main_section{
+        display: flex;
+        padding: 0;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    #personal_loan .main_section .img_ka_div{
+        width: 80%;
+        margin-top: 1rem;
+    }
+
+    #personal_loan .main_section .text_ka_div{
+        width: 80%
+    }
+
+    #personal_loan .main_section .text_ka_div .img_ka_div{
+        display: none;
+    }
+
+    #personal_loan .main_section .text_ka_div h2{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+
+    #business_tools{
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+        padding: 5px;
+        background-color: #fff;
+    }
+
+    footer #footer_head{
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    footer #footer_head .left{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    footer #footer_body ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+}
+
