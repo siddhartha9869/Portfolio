@@ -24,7 +24,7 @@ $("document").ready(() => {
 
     // utilize the obtained data
     $('#objectives').html(xml.getElementsByTagName("Objectives")[0].childNodes[0].nodeValue);
-// ==================================================================================================
+    // ==================================================================================================
 
     const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Node.js', 'SQL', 'Git', 'Java', 'PHP'];
 
@@ -57,7 +57,7 @@ $("document").ready(() => {
     // Generate skill bubbles periodically
     setInterval(generateSkill, 1000);
 
-// ==================================================================================================
+    // ==================================================================================================
     // Function to load XML data asynchronously
     async function loadXMLDoc(url, callback) {
         await fetch(url)
@@ -80,7 +80,7 @@ $("document").ready(() => {
     // Callback function to handle the loaded XML data
     async function handleXMLData(xmlDoc) {
         // Process the XML data as needed
-// ------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------
         // Extracting data from XML
         var QName = xmlDoc.getElementsByTagName('QName')
         var Name = xmlDoc.getElementsByTagName('Name')
@@ -103,22 +103,21 @@ $("document").ready(() => {
             </div>`);
         }
 
-// ------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------
 
         $.ajax({
             type: "GET",
             url: "info.xml", // Assuming the XML file is named projects.xml
             dataType: "xml",
-            success: function(xml){
+            success: function (xml) {
                 // Parse XML and create project cards
-                $(xml).find('Project').each(function(){
+                $(xml).find('Project').each(function () {
                     var name = $(this).find('Name').text();
                     var pType = $(this).find('PType Type').toArray().map(node => $(node).text()).join(', ');
                     var pLanguage = $(this).find('PLanguage Language').toArray().map(node => $(node).text()).join(', ');
                     var projectImages = $(this).find('ProjectImage Image').toArray().map(node => $(node).text());
-                    
                     var nav = $(this).find('NavURL').text();
-                    var projectCard = '<a href="' + nav + '?data='+name+'" ><div class="card">';
+                    var projectCard = '<a href="' + nav + '?data=' + name + '" ><div class="card">';
                     projectCard += `<div class="imgbox">
                         <img src="${projectImages[0]}" />
                         <h2>${name}</h2>
@@ -127,28 +126,19 @@ $("document").ready(() => {
                         <p><strong>Project Type:</strong> ${pType}</p>
                         <p><strong>Programming Languages:</strong> ${pLanguage}</p>
                     </div>`;
-                    
                     projectCard += '</div></a>';
-    
+
                     $('#project').append(projectCard);
 
-                    $('.card').click(function(){
+                    $('.card').click(function () {
                         window.location(nav);
                     });
                 });
-
-            
-
             },
-            error: function(){
+            error: function () {
                 console.log('Error loading XML file');
             }
         });
-
-        // Filter projects on button click
-   
-
-
     }
 
 
@@ -157,9 +147,86 @@ $("document").ready(() => {
     loadXMLDoc(xmlURL, handleXMLData);
 
 
-// ==================================================================================================
+    // ==================================================================================================
 
-  
-// ==================================================================================================
+    $(".filter").each(function () {
+        var item = $(this).text();
+        // console.log(item);
+        $(this).click(()=> {
+            $.ajax({
+                type: "GET",
+                url: "info.xml", // Assuming the XML file is named projects.xml
+                dataType: "xml",
+                success: function (xml) {
+                    // Parse XML and create project cards
+                    var projectCard = "";
+                    $(xml).find('Project').each(function () {
+                        
+                        var name = $(this).find('Name').text();
+                        var pType = $(this).find('PType Type').toArray().map(node => $(node).text()).join(', ');
+                        var pLanguage = $(this).find('PLanguage Language').toArray().map(node => $(node).text()).join(', ');
+                        var projectImages = $(this).find('ProjectImage Image').toArray().map(node => $(node).text());
+                        var tp = $(this).find('PType Type').toArray().map(node => $(node).text());
+                        // console.log(tp[0]==="WebPage Project");
+                        var nav = $(this).find('NavURL').text();
+
+                        // for (let i = 0; i < tp.length; i++) {
+                        //     if (tp[i]===item) {
+                        //         console.log("found");
+                        //     }
+                        // }
+                        if ($.inArray(item, tp) >=0) {
+                            // console.log("Entered into filter");
+
+                            projectCard += '<a href="' + nav + '?data=' + name + '" ><div class="card">';
+                            projectCard += `<div class="imgbox">
+                                <img src="${projectImages[0]}" />
+                                <h2>${name}</h2>
+                            </div>
+                            <div class="content">
+                                <p><strong>Project Type:</strong> ${pType}</p>
+                                <p><strong>Programming Languages:</strong> ${pLanguage}</p>
+                            </div>`;
+
+                            projectCard += '</div></a>';
+
+                            
+                        } else if (item=='All') {
+                            projectCard += '<a href="' + nav + '?data=' + name + '" ><div class="card">';
+                            projectCard += `<div class="imgbox">
+                                <img src="${projectImages[0]}" />
+                                <h2>${name}</h2>
+                            </div>
+                            <div class="content">
+                                <p><strong>Project Type:</strong> ${pType}</p>
+                                <p><strong>Programming Languages:</strong> ${pLanguage}</p>
+                            </div>`;
+
+                            projectCard += '</div></a>';
+                        }
+
+
+
+                        
+
+                        $('.card').click(function () {
+                            window.location(nav);
+                        });
+                    });
+                    $('#project').html(projectCard);
+
+
+                },
+                error: function () {
+                    console.log('Error loading XML file');
+                }
+            });
+
+
+            
+        })
+    });
+
+    // ==================================================================================================
 });
 
