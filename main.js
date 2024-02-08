@@ -142,7 +142,6 @@ $("document").ready(() => {
     }
 
 
-
     // Call the function to load XML asynchronously
     loadXMLDoc(xmlURL, handleXMLData);
 
@@ -167,17 +166,8 @@ $("document").ready(() => {
                         var pLanguage = $(this).find('PLanguage Language').toArray().map(node => $(node).text()).join(', ');
                         var projectImages = $(this).find('ProjectImage Image').toArray().map(node => $(node).text());
                         var tp = $(this).find('PType Type').toArray().map(node => $(node).text());
-                        // console.log(tp[0]==="WebPage Project");
                         var nav = $(this).find('NavURL').text();
-
-                        // for (let i = 0; i < tp.length; i++) {
-                        //     if (tp[i]===item) {
-                        //         console.log("found");
-                        //     }
-                        // }
                         if ($.inArray(item, tp) >=0) {
-                            // console.log("Entered into filter");
-
                             projectCard += '<a href="' + nav + '?data=' + name + '" ><div class="card">';
                             projectCard += `<div class="imgbox">
                                 <img src="${projectImages[0]}" />
