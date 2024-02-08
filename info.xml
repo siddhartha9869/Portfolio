@@ -83,7 +83,7 @@
         <Project>
             <Name>Multi</Name>
             <PType>
-                <Type>WebPage Projet</Type>
+                <Type>WebPage Project</Type>
                 <Type>Static Project</Type>
                 <Type>Website</Type>
             </PType>
@@ -137,7 +137,7 @@
         <Project>
             <Name>Carpenter</Name>
             <PType>
-                <Type>Ecommerce Projet</Type>
+                <Type>Ecommerce Project</Type>
                 <Type>Dynamic Project</Type>
                 <Type>Website</Type>
             </PType>
@@ -159,6 +159,7 @@
                 <Type>Full Stack Project</Type>
                 <Type>Dynamic Project</Type>
                 <Type>Website</Type>
+                <Type>Ecommerce Project</Type>
             </PType>
             <PLanguage>
                 <Language>PHP</Language>
