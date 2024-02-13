@@ -26,7 +26,7 @@ $("document").ready(() => {
     $('#objectives').html(xml.getElementsByTagName("Objectives")[0].childNodes[0].nodeValue);
     // ==================================================================================================
 
-    const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'React', 'Node.js', 'SQL', 'Git', 'Java', 'PHP'];
+    const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'Hibernet', 'Advance Java', 'SQL', 'Git', 'Java', 'PHP', 'Spring', 'Android Development', 'XML', 'jQuery', 'JSON', 'AJAX'];
 
     // Function to generate a random number between min and max
     function getRandomNumber(min, max) {
